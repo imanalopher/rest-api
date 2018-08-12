@@ -10,11 +10,11 @@ class ItemController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Item[]|\Illuminate\Database\Eloquent\Collection
      */
     public function index()
     {
-        //
+        return Item::all();
     }
 
     /**
@@ -41,22 +41,22 @@ class ItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Model\Item  $goods
-     * @return \Illuminate\Http\Response
+     * @param  \App\Model\Item $item
+     * @return Item
      */
-    public function show(Item $goods)
+    public function show(Item $item)
     {
-        //
+        return $item;
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\Item  $goods
+     * @param  \App\Model\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Item $goods)
+    public function update(Request $request, Item $item)
     {
         //
     }
@@ -64,10 +64,10 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Model\Item  $goods
+     * @param  \App\Model\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $goods)
+    public function destroy(Item $item)
     {
         //
     }
