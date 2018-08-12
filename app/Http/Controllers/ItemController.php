@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Goods;
+use App\Model\Item;
 use Illuminate\Http\Request;
 
-class GoodsController extends Controller
+class ItemController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class GoodsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Model\Goods  $goods
+     * @param  \App\Model\Item  $goods
      * @return \Illuminate\Http\Response
      */
-    public function show(Goods $goods)
+    public function show(Item $goods)
     {
         //
     }
@@ -53,10 +53,10 @@ class GoodsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\Goods  $goods
+     * @param  \App\Model\Item  $goods
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Goods $goods)
+    public function update(Request $request, Item $goods)
     {
         //
     }
@@ -64,10 +64,10 @@ class GoodsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Model\Goods  $goods
+     * @param  \App\Model\Item  $goods
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Goods $goods)
+    public function destroy(Item $goods)
     {
         //
     }
